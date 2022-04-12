@@ -14,39 +14,48 @@ body {
   margin: 0 auto;
 }
 
+
+/* БЛОКУ ЗАГОЛОВКА ДАЕМ 100 ПРОЦЕНТОВ ДОСТУПНОЙ ШИРИНЫ И ВЫРАВНИВАЕЙ ЭЛЕМЕНТЫ ВНУТРИ ПО ЦЕНТРУ */
 header {
   width: 100%;
   text-align: center;
 }
 
+/* ЦВЕТ ЗАГОЛОВКУ ЧЕРНЫЙ */
 h1 {
   color: #000000;
 }
 
+/* ОТОЛБРАЖАЮ НИЖНЮЮ ГРАНИЦУ КОНТЕЙНЕРА В ВИДЕ СЕРОЙ ЛИНИИ */
 nav {
   border-bottom: solid #5c5b5b 1px;
 }
 
+/* ВЫСТАВЛЮЯ ОТСТУПЫ СОДЕРЖИМОГО МЕНЮ */
 header nav ul {
   padding: 0px;
   margin-top: 30px;
 }
 
+/* ОТСТУП МЕЖДУ ЭЛЕМЕНТАМИ МЕНЮ И ОТОБРАЖЕНИЕ СПИСКА С МЕНЮ В ГОРИЗОНТАЛЬНУЮ ЛИНИЮ */
 header nav ul li {
   margin: 0 20px;
   display: inline;
 }
 
+/* ЦВЕТ ССЫЛОК МЕНЮ, НИЖНЕЕ ПОДЧЕРКИВАНИЕ, МЕЖБУКВЕННЫЙ ИНТЕРВАЛ */
 header nav ul li a {
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
 
+/* КРАСНЫЕ ПРИ НАВЕДЕНИИ */
 header ul li a:hover {
   color: red;
 }
 
+/* НАСТРАИВАЕМ ПОЗИЦИЮ БЛОКА С ИНФОРМАЦИЕЙ ОБО МНЕ, ШИРИНА БЛОКА, МИНИМАЛЬНАЯ ВЫСОТА БЛОКА И ОТСТУП С ВЕРХУ */
 .about {
     position: relative;
     width: 100%;
@@ -54,6 +63,7 @@ header ul li a:hover {
     margin-top: 30px;
 }
 
+/* АБСОЛЮТНАЯ ПОЗИЦИЯ ЗАГОЛОВКА С УКАЗАНИЕМ КООРДИНАТ И ЦВЕТ ЧЕРНЫЙ */
 .about h2 {
   position: absolute;
   left: 50px;
@@ -61,6 +71,7 @@ header ul li a:hover {
   color: #000000;
 }
 
+/* ВЫРАВНИВАНИЕМ В АБСОЛЮТНОМ ПОЗИЦИОНИРОВАНИИ БЛОК С ТЕКСТОМ РЕЗЮМЕ, ОГРАНИЧИВАЕМ ШИРИНУ БЛОКА И СТАВИМ МЕЖСТРОЧНЫЙ ИНТЕРВАЛ */
 .about div {
   position: absolute;
   left: 50px;
@@ -69,10 +80,12 @@ header ul li a:hover {
   line-height: 1.5em;
 }
 
+/* КРАШУ ЖИРНЫЕ ВЫДЕЛЕНИЯ В ТЕКСТЕ В ЧЕРНЫЙ ЦВЕТ */
 .about div strong {
   color: #000000;
 }
 
+/* НАСТРАИВАЮ ШИРИНУ КАРТИНКИ, КООРДИНАТЫ КАРТИНКИ И ЗАКРУГЛЯЮ НА 5 ПКСЕЛЕЙ УГЛЫ */
 .about img {
     width: 40%;
     right: 0;
@@ -82,6 +95,9 @@ header ul li a:hover {
     object-fit: cover;
     height: 730px;
 }
+
+/* НАСТРОЙКА КРУГА С НАДПИСЬЮ ЭТО Я, АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ С КООРДИНАТАМИ ОТСТУПА, 
+ШИРИНА И ОТОБРАЖЕНИЕ В ФЛЕКС С ВЫРАВНИВАНИЕМ НАДПИСИ ПО ВЕРТИКАЛИ И ГОРИЗОНТАЛИ */
 
 .about span {
     position: absolute;
@@ -98,6 +114,7 @@ header ul li a:hover {
     text-align: center;
 }
 
+/* БЛОК С ПРОЕКТАМИ, ОТОБРАЖЕНИЕ ФЛЕКС, РАЗРЕШАЮ ПЕРЕНОСЫ, ВЫРАВНИВАЮ ПО ЦЕНТРУ С ПУСТОТОЙ ВОКРУГ */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -105,12 +122,14 @@ header ul li a:hover {
   justify-content: space-around;
 }
 
+/* ЗАГОЛОВОК УЧАСТИЕ В ПРОЕКТАХ */
 .projects h2 {
   width: 100%;
   text-align: center;
   color: #000000;
 }
 
+/* НАСТРОКА БЛОКОВ С ПРОЕКТАМИ С ФОНОВОЙ КАРТИНКОЙ ПО УМОЛЧАНИЮ */
 .projects div {
   width: 520px;
   background: #5c5b5b;
@@ -125,6 +144,7 @@ header ul li a:hover {
   border-radius: 10px;
 }
 
+/* ТУТ ДАЛЕЕ МОЖНО ПОСТАВИТЬ СВОЮ КАРТИНКУ ФОНОМ К КАЖДОМУ ИЗ 4-Х ПРОЕКТОВ */
 #project1 {
   background-image: url('../images/фотокнига.jpg');
 }
@@ -141,6 +161,7 @@ header ul li a:hover {
   background-image: url('../images/carrot.jpg');
 }
 
+/* ЗАГОЛОВОКИ ПРОЕКТОВ */
 .projects h3 {
   background-color: white;
   padding: 10px;
@@ -152,6 +173,7 @@ header ul li a:hover {
   font-weight: 500;
 }
 
+/* ОПИСАНИЕ ПРОЕКТОВ */
 .projects span {
   background: white;
   padding: 10px;
@@ -165,21 +187,25 @@ header ul li a:hover {
  
 }
 
+/* НАСТРАИВАЮ ОТОБРАЖЕНИЕ БЛОКА С ПЯТЫМ ПРОЕКТОМ */
 .future {
   position: relative;
 }
 
+/* ЗАГОЛОВОК ПЯТОГО ПРОЕКТА */
 .future h2 {
   width: 100%;
   text-align: center;
   color: #000000;
 }
 
+/* ССЫЛКА ЗАНИМАЕТ ВСЕ ПРОСТРАНСТВО */
 .future a {
   width: 100%;
   text-align: center;
 }
 
+/* НАСТРАИВАЕМ КОНТЕЙНЕР С ФОТОГРАФИЕЙ НА ФОНЕ ПЯТОГО ПРОЕКТА */
 .future a .cover {
   width: 100%;
   min-height: 700px;
@@ -188,6 +214,7 @@ header ul li a:hover {
   background-position: center;
 }
 
+/* НАСТРАИВАЕМ ЗАТЕМНЯЮЩИЙ БЛОК */
 .future a .back {
   width: 100%;
   min-height: 700px;
@@ -198,17 +225,20 @@ header ul li a:hover {
   transition: .5s;
 }
 
+/* ПРИ НАВЕДЕНИИ ПРОЗРАЧНОСТЬ УМЕНЬШАЕТСЯ И ЗАДАНО ВРЕМЯ */
 .future a:hover .back {
   opacity: 0.9;
   transition: .5s;
 }
 
+/* ТЕКСТ С ОПИСАНИЕМ ПРОЕКТА ПРИ НАВЕДЕНИИ УВЕЛИЧИВАЕТ ШРИФТ И ПОДНИМАЕТСЯ ВЫШЕ С УКАЗАНИЕМ ВРЕМЕНИ */
 .future a:hover p {
   transition: .5s;
   font-size: 170%;
   top: 250px;
 }
 
+/* ОПИСАНИЕ ПЯТОГО ПРОЕКТА В СПОКОЙНОМ СОСТОЯНИИ */
 .future a p {
   position: absolute;
   top: 300px;
@@ -218,6 +248,8 @@ header ul li a:hover {
   transition: .5s;
 }
 
+
+/* НАСТРАИВАЮ КОНТЕЙНЕР С ПОДВАЛОМ САЙТЕ*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -226,20 +258,24 @@ footer {
   border-top: solid #5c5b5b 1px;
 }
 
+/* ССЫЛКИ ВНУТРИ ПОДВАЛА */
 footer a {
   color: black;
   text-decoration: none;
 }
-
+/* РЕАКЦИЯ ССЫЛКИ В ПОДВАЛЕ ПРИ НАВЕДЕНИИ */
 footer a:hover {
   color: red;
 }
+
+/* АБЗАЦ С КЛАССОМ СУПЕРФУТЕР НАКЛОННЫЙ С УМЕНЬШЕННЫМ РАЗМЕРОМ ШРИФТА */
 
 .superfooter {
   font-style: italic;
   font-size: 0.8em;
 }
 
+/* Стили для контента внутренних страниц */
 
 .page-content h2 {
   color: #000000;
